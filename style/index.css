@@ -1,1 +1,109 @@
-/* Add CSS styling here */
+@import
+url('https://fonts.googleapis.com/css?family=Fjalla+One|Nunito+Sans&display=swap');
+
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+
+}
+
+h1, .s{
+    text-align: center;
+    font-size: 50px;
+
+}
+h1 {
+    margin-right: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#top{
+    display:flex
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover{
+    background:teal; 
+}
+
+#navigation{
+    display:flex;
+    flex-direction: row;
+    justify-content: space;
+    align-items: center;
+    align-content: center;
+    background: #66CDAA;
+}
+
+header {
+    background: skyblue
+}
+
+.profile{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: gainsboro
+}
+
+#pic-container{
+    width: 45%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+#me{
+    width: 45%;
+    margin-top: 2%;
+    order: 2;
+}
+
+#me a{
+    font-style: bold;
+    color: royalblue;
+    font-size: 20px;
+    border: double goldenrod;
+}
+
+#me *{
+    line-height: 30px;
+}
+
+figure{
+    width: 15%;
+    margin: 5%;
+}
+
+#gallery{
+    display:flex;
+    flex-direction:row;
+    align-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    background-image:url('https://images.unsplash.com/photo-1496517463163-3550265405c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80')
+}
+
+#gallery img{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+figure:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    text-align:center;
+    background: skyblue;
+}
