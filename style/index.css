@@ -1,12 +1,12 @@
 @import
-url('https://fonts.googleapis.com/css?family=Fjalla+One|Nunito+Sans&display=swap');
+url('https://fonts.googleapis.com/css?family=Jost|Montserrat&display=swap');
 
 * {
     box-sizing:border-box;
     padding:0;
     margin:0;
     max-width:100%;
-
+    font-family: 'Montserrat', serif;
 }
 
 h1, .s{
@@ -16,6 +16,8 @@ h1, .s{
 }
 h1 {
     margin-right: 2%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 a {
@@ -29,10 +31,12 @@ a {
 nav a{
     text-decoration: none;
     padding: 10px;
+    color: black;
+    font-weight: bold;
 }
 
 nav a:hover{
-    background:teal; 
+    background:white; 
 }
 
 #navigation{
@@ -41,11 +45,13 @@ nav a:hover{
     justify-content: space;
     align-items: center;
     align-content: center;
-    background: #66CDAA;
+    background:lightgray;
+    
 }
 
 header {
-    background: skyblue
+    background: rgb(70, 83, 95);
+    color: lightgray
 }
 
 .profile{
@@ -53,7 +59,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: gainsboro
+    background: white;
 }
 
 #pic-container{
@@ -69,11 +75,21 @@ header {
     order: 2;
 }
 
+#name{
+    margin-bottom: 10px;
+}
+
 #me a{
     font-style: bold;
-    color: royalblue;
+    color: black;
     font-size: 20px;
-    border: double goldenrod;
+    border: 3px solid grey;
+    padding: 3px;
+    background: lightgray;
+}
+
+#me p{
+    margin-top: 10px;
 }
 
 #me *{
@@ -91,7 +107,7 @@ figure{
     align-content: space-between;
     flex-wrap: wrap;
     text-align: center;
-    background-image:url('https://images.unsplash.com/photo-1496517463163-3550265405c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80')
+    background:lightgrey;
 }
 
 #gallery img{
@@ -104,6 +120,9 @@ figure:hover{
 }
 
 footer{
+    color: white;
+    font-weight: bold;
     text-align:center;
-    background: skyblue;
+    background: rgb(70, 83, 95);
+    
 }
