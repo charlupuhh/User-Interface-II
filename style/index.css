@@ -1,1 +1,128 @@
-/* Add CSS styling here */
+@import
+url('https://fonts.googleapis.com/css?family=Jost|Montserrat&display=swap');
+
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    font-family: 'Montserrat', serif;
+}
+
+h1, .s{
+    text-align: center;
+    font-size: 50px;
+
+}
+h1 {
+    margin-right: 2%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#top{
+    display:flex
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background:white; 
+}
+
+#navigation{
+    display:flex;
+    flex-direction: row;
+    justify-content: space;
+    align-items: center;
+    align-content: center;
+    background:lightgray;
+    
+}
+
+header {
+    background: rgb(70, 83, 95);
+    color: lightgray
+}
+
+.profile{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: white;
+}
+
+#pic-container{
+    width: 45%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+#me{
+    width: 45%;
+    margin-top: 2%;
+    order: 2;
+}
+
+#name{
+    margin-bottom: 10px;
+}
+
+#me a{
+    font-style: bold;
+    color: black;
+    font-size: 20px;
+    border: 3px solid grey;
+    padding: 3px;
+    background: lightgray;
+}
+
+#me p{
+    margin-top: 10px;
+}
+
+#me *{
+    line-height: 30px;
+}
+
+figure{
+    width: 15%;
+    margin: 5%;
+}
+
+#gallery{
+    display:flex;
+    flex-direction:row;
+    align-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    background:lightgrey;
+}
+
+#gallery img{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+figure:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    color: white;
+    font-weight: bold;
+    text-align:center;
+    background: rgb(70, 83, 95);
+    
+}
