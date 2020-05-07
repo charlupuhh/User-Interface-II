@@ -9,19 +9,33 @@ url('https://fonts.googleapis.com/css?family=Jost|Montserrat&display=swap');
     font-family: 'Montserrat', serif;
 }
 
+html{
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Styling for the header */
+
 h1, .s{
     text-align: center;
-    font-size: 50px;
+    font-size: 5rem;
 
 }
 h1 {
     margin-right: 2%;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: .3rem;
 }
 
-a {
-    text-decoration: none;
+.linkedin{
+    color: #1692cc;
+}
+
+.github{
+    color: #939fac;
 }
 
 #top{
@@ -30,9 +44,10 @@ a {
 
 nav a{
     text-decoration: none;
-    padding: 10px;
+    padding: 1rem;
     color: black;
     font-weight: bold;
+    font-size: 2rem;
 }
 
 nav a:hover{
@@ -54,75 +69,160 @@ header {
     color: lightgray
 }
 
+/* Styling for the profile */
+
 .profile{
     text-align: left;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     background: white;
 }
 
 #pic-container{
-    width: 45%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    width: 30%;
+    margin: 3%;
 }
 
-
 #me{
-    width: 45%;
+    width: 55%;
     margin-top: 2%;
     order: 2;
+    line-height: 3rem;
+    font-size: 2rem;
 }
 
 #name{
-    margin-bottom: 10px;
+    font-size: 4rem;
+    margin: 2rem 0;
 }
 
 #me a{
     font-style: bold;
     color: black;
-    font-size: 20px;
-    border: 3px solid grey;
-    padding: 3px;
+    border: .3rem solid grey;
+    padding: .3rem;
     background: lightgray;
 }
 
+#me a:hover{
+    background: rgb(197, 197, 197);
+}
+
 #me p{
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
-#me *{
-    line-height: 30px;
-}
-
-figure{
-    width: 15%;
-    margin: 5%;
-}
+/* Styling for the gallery */
 
 #gallery{
     display:flex;
     flex-direction:row;
-    align-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
     background:lightgrey;
 }
 
+figure{
+    width: 25%;
+    margin: 2% 0;
+    transform: scale(1.2);
+}
+
 #gallery img{
-    max-height: 100px;
-    max-width: 100px;
+    width: 10rem;
+    height: 10rem;
 }
 
 figure:hover{
     transform: scale(1.2);
 }
 
+/* Styling for the footer */
+
 footer{
     color: white;
     font-weight: bold;
     text-align:center;
     background: rgb(70, 83, 95);
+    font-size: 1.5rem;
+}
+
+
+/* Tablet Styling */
+@media(max-width: 800px){
     
+    /* Profile Styling */
+    #name{
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+
+    #me{
+        font-size: 1.5rem;
+    }
+
+    #me a{
+        padding: .1rem;
+    }
+
+    figure{
+        transform: none;
+    }
+
+    /* Footer Styling */
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer-text{
+        transform: translateY(20%);
+        margin-right: 5%;
+    }
+
+    footer a{
+        color: white;
+    }
+}
+
+
+/* Mobile Styling */
+@media(max-width: 500px){
+    
+    /* Header Styling */
+    h1, .s{
+        font-size: 3.5rem;
+    }
+
+    nav a{
+        font-size: 1.3rem;
+    }
+
+    /* Profile Styling */
+    #me{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #name{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #me a{
+        font-size: 1.3rem;
+    }
+
+    /* Gallery Styling */
+
+    figure{
+        width: 50%;
+        margin: 5% 0;
+    }
+    
+    /* Footer Styling */    
+    #footer-text{
+        transform: translateY(5%);
+    }
 }
