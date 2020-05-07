@@ -200,14 +200,11 @@ footer{
     }
 
     /* Profile Styling */
-    #me{
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    #name{
-        font-size: 2rem;
-        text-align: center;
+    .profile{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #me a{
